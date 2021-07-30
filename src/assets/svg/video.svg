@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+  <g id="Icon" transform="translate(0.296 -0.339)">
+    <g id="Retângulo_706" data-name="Retângulo 706" transform="translate(-0.296 0.339)" fill="none" stroke="#fff" stroke-width="0.6">
+      <rect width="16" height="10" rx="2" stroke="none"/>
+      <rect x="0.3" y="0.3" width="15.4" height="9.4" rx="1.7" fill="none"/>
+    </g>
+    <g id="Polígono_2" data-name="Polígono 2" transform="translate(10.483 2.339) rotate(90)" fill="none">
+      <path d="M2.853,0,5.706,5.072H0Z" stroke="none"/>
+      <path d="M 2.852989912033081 1.223849534988403 L 1.025915145874023 4.471981048583984 L 4.680064678192139 4.471981048583984 L 2.852989912033081 1.223849534988403 M 2.852989912033081 9.5367431640625e-07 L 5.705979824066162 5.071980953216553 L 0 5.071980953216553 L 2.852989912033081 9.5367431640625e-07 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>

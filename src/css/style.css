@@ -1,0 +1,287 @@
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+.btn {
+  min-width: 60px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: #EB4826;
+  color: #ffffff;
+}
+.btn-primary {
+  background-color: #ED6F2E;
+}
+.btn-social {
+  background-color: #EB4826;
+  font-weight: 400;
+}
+.btn-social:hover {
+  background-color: #ED6F2E;
+  color: #ffffff;
+}
+.btn-dark {
+  background-color: #393937;
+}
+.btn-dark:hover {
+  background-color: #252525;
+  color: #ffffff;
+}
+.btn-outline {
+  background-color: transparent;
+  border: solid 2px #ED6F2E;
+  color: #ffffff;
+}
+.btn-outline:hover {
+  background-color: #ED6F2E;
+  color: #ffffff;
+}
+.btn__icon {
+  padding-right: 8px;
+  max-width: 24px;
+}
+
+.banner {
+  background-image: url("../assets/img/main-banner-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 32px;
+}
+.banner span {
+  display: block;
+}
+.banner .title {
+  padding-top: 20vh;
+}
+.banner .title__text-top {
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+}
+.banner .title__text-middle {
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding-bottom: 8px;
+}
+.banner .title__text-bottom {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.banner .infos {
+  font-weight: 900;
+  padding-top: 20vh;
+}
+.banner .infos__text-top {
+  font-size: 18px;
+  letter-spacing: 2.5px;
+}
+.banner .infos__text-bottom {
+  font-size: 44px;
+  text-transform: lowercase;
+}
+.banner .price__top {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.banner .price__bottom {
+  font-size: 24px;
+  font-weight: 900;
+}
+.banner .btn {
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.about .buttons {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.about .buttons__list {
+  margin: 0 5px 0 5px;
+}
+.about .buttons__item {
+  padding: 0 5px 0 5px;
+}
+.about .buttons .btn {
+  width: 100%;
+}
+.about .buttons .btn__text {
+  font-size: 9px;
+  font-weight: 400;
+}
+.about .card {
+  background-color: #ECF2F2;
+}
+.about .card__img {
+  width: 100%;
+}
+.about .card__infos {
+  padding: 32px;
+}
+.about .card__title {
+  font-size: 22px;
+  color: #5E5E5E;
+  font-weight: 900;
+  line-height: 1.1;
+  padding-bottom: 24px;
+}
+.about .card__text {
+  font-size: 14px;
+  color: #393937;
+  line-height: 1.5;
+  padding-bottom: 24px;
+}
+.about .card .btn {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  font-weight: 900;
+}
+
+.diff {
+  background-color: #ED6F2E;
+  padding: 32px;
+}
+.diff__title {
+  color: #5E5E5E;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 32px;
+}
+.diff__item {
+  padding-bottom: 24px;
+}
+.diff__icon {
+  align-self: flex-start;
+  height: 36px;
+}
+.diff__text {
+  color: #393937;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.diff__subtext {
+  color: #393937;
+  font-size: 11px;
+  opacity: 0.6;
+}
+.diff .btn {
+  width: 90%;
+  margin: 32px auto;
+}
+
+.galery {
+  background-color: #454545;
+  padding: 32px 32px 48px;
+}
+.galery__title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 900;
+}
+.galery__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.galery .btn {
+  width: 48%;
+  margin: 32px 0 48px;
+}
+.galery__img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.adress {
+  background-color: #454545;
+}
+.adress__infos {
+  padding: 32px;
+}
+.adress__title {
+  color: #ED6F2E;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 48px;
+}
+.adress__text {
+  color: #ffffff;
+  font-size: 14px;
+  padding-bottom: 16px;
+  line-height: 1.5;
+}
+.adress__pin {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+.adress__pin p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+}
+.adress__img {
+  padding-right: 12px;
+}
+.adress__buttons {
+  margin: 0;
+}
+.adress .btn {
+  font-weight: 400;
+  font-size: 11px;
+}
+.adress .btn:last-child {
+  font-weight: 900;
+}
+.adress .gmap {
+  width: 100%;
+  height: 500px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 447px;
+  padding: 58px 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252525;
+  color: #5E5E5E;
+}
+.footer .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #363636;
+}
+.footer__infos {
+  font-weight: 400;
+  font-size: 12px;
+}
+.footer p {
+  padding-bottom: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
