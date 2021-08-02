@@ -1,5 +1,0 @@
-Fazer setinha do banner principal no mobile
-
-trocar paragrafos do main banner para h1h2h3
-
-arrumar alinhamento das imagens no botão

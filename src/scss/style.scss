@@ -11,6 +11,8 @@ $bg-dark: #454545;
 $normal: 400;
 $bold: 900;
 
+$desktop: 768px;
+
 body {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
@@ -70,11 +72,95 @@ body {
   }
 }
 
+.menu {
+  width: 100%;
+  height: 64px;
+  display: block;
+  position: absolute;
+  top: 0;
+  display: flex;
 
+  &__logo {
+    background-image: url('../assets/svg/logo-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $black;
+    width: 20%;
+    height: 100%;
+    @media screen and (min-width: $desktop) {
+      background-image: url('../assets/svg/logo.svg');
+      background-size: 96px;
+    }
+  }
 
+  &__search {
+    width: 60%;
+    height: 100%;
+    background-color: rgba($black,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    img {
+      width: 24px;
+      margin-left:18px;
+      margin-right:8px;
+    }
 
+    input {
+      height: 100%;
+      width: calc(100% - 32px);
+      padding-left: 12px;
+      background-color: transparent;
+      border: none;
+      color: $white;
+      font-size: 18px;
+      
+      &:focus {
+        outline: none;
+        border: $primary solid 1px;
+      }
+    }
+  }
 
+  &__hamburguer {
+    background-color: $black;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .element {
+      width: 5px;
+      height: 5px;
+      margin: 2px;
+      border-radius: 10px;
+      background-color: $white;
+      @media screen and (min-width: $desktop) {
+        width: 24px;
+        height: 3px;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    color: $white;
+    padding: 12px;
+    text-transform: uppercase;
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
+}
 
 .banner{
   background-image: url('../assets/img/main-banner-mobile.jpg');
@@ -91,13 +177,87 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding:32px;
+  margin: 0;
+  @media screen and (min-width: $desktop) {
+    background-image: url('../assets/img/main-banner.jpg');
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-direction: row;
+    padding:0px;
+  }
 
   span {
     display:block
   }
 
+  &__form {
+    background-color: $primary;
+    height: calc(100% - 64px);
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+
+    .form {
+      width: 100%;
+
+      label.error {
+        text-transform: none;
+        font-size:14px;
+        color: $dark-gray;
+        font-weight: $bold;
+        padding-top: 0px;
+        margin-top: -8px;
+        display: block;
+      }
+
+      &__title {
+        font-size:28px;
+        font-weight: $bold;
+        padding-bottom: 24px;
+
+      }
+
+      &__text {
+        text-transform: none;
+        font-size:16px;
+        padding-bottom: 24px;
+      }
+
+      input, button {
+        display: block;
+        padding: 8px;
+        margin: 8px 0 12px;
+        width: 100%;
+        border: none;
+      }
+
+      input::placeholder {
+        text-transform: uppercase;
+      }
+
+      button {
+        margin-top: 24px;
+        cursor: pointer;
+        color: $dark-gray;
+        text-transform: uppercase;
+        font-weight: $bold;
+      }
+    }
+  }
+
   .title {
     padding-top:20vh;
+    @media screen and (min-width: $desktop) {
+      padding-top:0;
+    }
 
     &__text-top {
       font-size: 14px;
@@ -123,6 +283,9 @@ body {
   .infos {
     font-weight: $bold;
     padding-top:20vh;
+    @media screen and (min-width: $desktop) {
+      padding-top:48px;
+    }
 
     &__text-top {
       font-size:18px;
@@ -136,6 +299,9 @@ body {
   }
 
   .price {
+    @media screen and (min-width: $desktop) {
+      padding-top:48px;
+    }
     &__top {
       font-size: 14px;
       letter-spacing: 2px;
@@ -149,19 +315,36 @@ body {
   .btn {
     width: 100%;
     margin-bottom:3vh;
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
   }
 
 
 }
 
 .about {
+  position: relative;
 
   .buttons {
     padding-top: 32px;
     padding-bottom: 32px;
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      padding: 0px;
+      margin-left:32px;
+      top: 32px;
+      right: 48px;
+    }
     
     &__list {
       margin:0 5px 0 5px;
+      @media screen and (min-width: $desktop) {
+        margin-left: auto;
+        margin-right: 0;
+        padding-left: 64px;
+      }
     }
   
     &__item {
@@ -179,13 +362,20 @@ body {
 
   .card {
     background-color: $bg-light;
+    @media screen and (min-width: $desktop) {
+      margin:32px
+    }
 
     &__img {
       width: 100%;
+      padding:0;
     }
 
     &__infos {
       padding: 32px;
+      @media screen and (min-width: $desktop) {
+        margin-top: 100px
+      }
     }
 
     &__title {
@@ -210,7 +400,12 @@ body {
     }
 
   }
-  
+
+}
+
+.split {
+  margin-left: 0;
+  margin-right: 0;
 
 }
 
@@ -251,6 +446,10 @@ body {
   .btn {
     width: 90%;
     margin: 32px auto;
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+      margin: 32px 0; 
+    }
   }
 
 
@@ -326,6 +525,9 @@ body {
   .btn {
     font-weight: $normal;
     font-size: 11px;
+    @media screen and (min-width: $desktop) {
+      margin-left: 24px;
+    }
 
     &:last-child{
       font-weight: $bold;
@@ -370,6 +572,7 @@ body {
   &__infos {
     font-weight: 400;
     font-size:12px;
+    width: 100%;
   }
 
   p {
